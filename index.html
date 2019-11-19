@@ -4,112 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
     <title>Quickstagram</title>
 </head>
 <body>
-    <header>
+    <header id='page-header'>
         <section id='logo'>
-
+            <div id='logo-img'>
+                <img src="camera-png-icon-3.jpg" alt="Our Logo">
+            </div>
+            <div id='logo-text'>
+                <span>| Quickstagram</span>
+            </div>
         </section>
         <section id='search'>
-
+            <input type="text" placeholder='Search'>
         </section>
         <nav>
-
+            <div><img src="free-compass-icon-1.jpg" alt="Explore"></div>
+            <div><img src="free-heart-icon-23.jpg" alt="Activity"></div>
+            <div><img src="icon-user-24.jpg" alt="View Profile"></div>
         </nav>
     </header>
     <main>
-        <section class='card'>
-            <header class='card-header'>
-                <section class='post-user'>
-
+        <section id='cards'>
+            <section class='card'>
+                <div class='card-header'>
+                    <section class='post-user'>
+                        <div class='user-badge small'>
+                            <img src="anonymous-user-icon-2.jpg" alt="User icon">
+                        </div>
+                        <div>
+                            <span>CoolUserChick2019</span>
+                        </div>
+                    </section>
+                    <section class='expand-menu'>...</section>
+                </div>
+                <section class='card-content'>
+                    <img src="moon.jpg" alt="CoolUserChick2019's Post">
                 </section>
-                <section class='expand-menu'>...</section>
-            </header>
-            <section class='card-content'>
-
-            </section>
-            <section class='card-options'>
-
-            </section>
-            <section class='card-like-count'>
-
-            </section>
-            <section class='card-comments'>
-
-            </section>
-            <section id='card-add-comment'>
-                <input type="text" placeholder="Add a comment..."><button class='post-comment-button'>Post</button>
+                <section class='card-options'>
+                    <div class='left-options'>
+                        <img src="free-heart-icon-23.jpg" alt="Like this post">
+                        <img src="comments-icon-0.jpg" alt="View post and comments">
+                        <img src="free-share-icon-1.jpg" alt="Share this post">
+                    </div>
+                    <div class='right-options'>
+                        <img src="bookmark-icon-png-1.jpg" alt="Bookmark this post">
+                    </div>
+                </section>
+                <section class='card-like-count'>
+                    <span>103 likes</span>
+                </section>
+                <section class='card-comments'>
+                    <div class='comment'>
+                        <span class='comment-user'>Some Guy</span><span>Cool picture!</span>
+                    </div>
+                </section>
+                <section class='card-add-comment'>
+                    <input type="text" placeholder="Add a comment..."><button class='post-comment-button'>Post</button>
+                </section>
             </section>
         </section>
+        <aside>
+            <section id='account'>
+                <div class='user-badge'><img src='anonymous-user-icon-2.jpg' alt='Your user image'></div>
+                <div id='user-info'>
+                    <div id='username'>josialexa</div>
+                    <div id='fullname'>Josi Reis-West</div>
+                </div>
+            </section>
+            <section id='stories'>
+                <div class='aside-header'>
+                    <div>
+                        <span class='gray'>Stories</span>
+                    </div>
+                    <div class='link'>
+                        <span>Watch All</span>
+                    </div>
+                </div>
+                <section id='stories-list'>
+                     <div class='story'>
+                         <div class='user-badge small'>
+                             <img src='anonymous-user-icon-2.jpg' alt="Story user image">
+                         </div>
+                         <div class='story-user'>
+                             <span></span>
+                         </div>
+                         <div class='story-age'>
+                            <span></span>
+                         </div>
+                     </div>
+                </section>
+            </section>
+            <section id='suggestions'>
+                <div class='aside-header'>
+                    <div class='gray'>
+                        <span>Suggestions For You</span>
+                    </div>
+                    <div class='link'>
+                        <span>See All</span>
+                    </div>
+                </div>
+                <section id='suggestion-list'>
+                    <div class='suggestion'>
+                        <div class='suggestion-left-side'>
+                            <div class='user-badge small'>
+                                <img src='anonymous-user-icon-2.jpg' alt="Story user image">
+                            </div>
+                            <div class='suggestion-left-side-text'>
+                                <div class='suggested-user'>
+                                    <span>Some Guy</span>
+                                </div>
+                                <div class='recommendation-source'>
+                                    <span>Quickstagram Recommended</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='suggestion-right-side link'>
+                            <span>Follow</span>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <footer>
+                <div id='footer-links'>
+                    <span>About us</span><span>Support</span><span>Press</span><span>API</span>
+                    <span>Jobs</span><span>Privacy</span><span>Terms</span><span>Directory</span>
+                    <span>Profiles</span><span>Hashtags</span><span>LANGUAGE</span>
+                </div>
+                <div id='copyright'>
+                    <span>&copy 2019 QUICKSTAGRAM</span>
+                </div>
+            </footer>
+        </aside>
     </main>
-    <aside>
-        <section id='account'>
-            <div id='badge'><img src='anonymous-user-icon-2.jpg' alt='Your user image'></div>
-            <div id='username'>josialexa</div>
-            <div id='fullname'>Josi Reis-West</div>
-        </section>
-        <section id='stories'>
-            <header class='aside-header'>
-                <div>
-                    <span>Stories</span>
-                </div>
-                <div class='link'>
-                    <span>Watch All</span>
-                </div>
-            </header>
-            <section id='stories-list'>
-                 <div class='story'>
-                     <div class='user-badge'>
-                         <img src='anonymous-user-icon-2.jpg' alt="Story user image">
-                     </div>
-                     <div class='story-user'>
-                         <span></span>
-                     </div>
-                     <div class='story-age'>
-                        <span></span>
-                     </div>
-                 </div>
-            </section>
-        </section>
-        <section id='suggestions'>
-            <header class='aside-header'>
-                <div>
-                    <span>Suggestions For You</span>
-                </div>
-                <div class='link'>
-                    <span>See All</span>
-                </div>
-            </header>
-            <section id='suggestion-list'>
-                <div class='suggestion'>
-                    <div class='suggestion-left-side'>
-                        <div class='user-badge'>
-                            <img src='anonymous-user-icon-2.jpg' alt="Story user image">
-                        </div>
-                        <div class='suggested-user'>
-                            <span></span>
-                        </div>
-                        <div class='recommendation-source'>
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class='suggestion-right-side link'>
-                        <span>Follow</span>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <footer>
-            <div id='footer-links'>
-                <span>About us</span><span>Support</span><span>Press</span><span>API</span>
-                <span>Jobs</span><span>Privacy</span><span>Terms</span><span>Directory</span>
-                <span>Profiles</span><span>Hashtags</span><span>LANGUAGE</span>
-            </div>
-            <div>
-                <span>&copy 2019 QUICKSTAGRAM</span>
-            </div>
-        </footer>
-    </aside>
 </body>
 </html>
