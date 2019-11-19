@@ -130,6 +130,21 @@ body {
     color: gray;
 }
 
+.story {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+.story-user {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.story-age {
+    color: gray;
+}
+
 .suggestion {
     display: flex;
     align-content: center;
