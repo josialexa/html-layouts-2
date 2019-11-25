@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
 * {
-    font-family: sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
 body {
     background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+.quick-script {
+    font-family: Satisfy, cursive;
 }
 
 .cards {
@@ -181,7 +187,6 @@ body {
     justify-content: flex-start;
     align-items: center;
     font-size: 20px;
-    font-family: Brush Script MT, cursive;
 }
 
 #logo #logo-img {
